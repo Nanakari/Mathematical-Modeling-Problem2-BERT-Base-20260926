@@ -1,0 +1,23 @@
+{
+  "model_id": "google-bert/bert-base-uncased",
+  "revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+  "files": {
+    ".cache/huggingface/.gitignore": "684888c0ebb17f374298b65ee2807526c066094c701bcc7ebbe1c1095f494fc1",
+    ".cache/huggingface/download/config.json.metadata": "17035b78fd3f8c57650e53e014614a240f7bf48f4e49923f5daee36ab2ae433e",
+    ".cache/huggingface/download/LICENSE.metadata": "60d55413c12237d3cd53c841afd52da24c8ae84d4c6ee6a3eb66bd825e679e1b",
+    ".cache/huggingface/download/model.safetensors.metadata": "33370d96568aee909ec4a24b9cf1f3aa3fbbd3e291349ce7463527c65dee15ad",
+    ".cache/huggingface/download/README.md.metadata": "a39568fffe3e20c877a47665b7221e9f3d26f018322286b85a3b1f8e6a50644f",
+    ".cache/huggingface/download/tokenizer.json.metadata": "6caf94d762264e7457376e28862f341d91d99cecfc3b3b48ef4c828c1c372ab1",
+    ".cache/huggingface/download/tokenizer_config.json.metadata": "e2905ca0c1554b73fe240c47de5352ca2f0b245eb9d90fe5d3b09daf1b34d7c4",
+    ".cache/huggingface/download/vocab.txt.metadata": "060f4cecf7799c74728a95cdd8183b9678069a7d9d1c4da177e4e2ccb2ad451f",
+    "config.json": "7160e1553ad2ca51d8c1cb066be533db31826e12d173824c1bb0cb1a4f187d20",
+    "LICENSE": "43070e2d4e532684de521b885f385d0841030efa2b1a20bafb76133a5e1379c1",
+    "model.safetensors": "68d45e234eb4a928074dfd868cead0219ab85354cc53d20e772753c6bb9169d3",
+    "provenance.json": "c98be8f1e5bd68059bfad343567751ca561880ac6e364ece9235808208beb605",
+    "README.md": "9187b6018ea0010d884e78e098e328faa1b88b301570d0cce606bb35e4067e17",
+    "tokenizer.json": "ce64fce797c24f68df90b40a3f74f579b336a493db14bd583fd520ea0d8c9a98",
+    "tokenizer_config.json": "a025160ef0431f1a392f6f050c1310f4c5d9fb6f275932dbccba73c4d214bf10",
+    "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+  },
+  "local_files_only": true
+}

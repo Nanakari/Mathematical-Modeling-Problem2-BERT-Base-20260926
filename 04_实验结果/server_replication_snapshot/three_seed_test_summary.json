@@ -1,0 +1,198 @@
+{
+  "usage": "postfreeze_diagnostic_only; no model selection",
+  "model": "full AV-direct BERT-Base",
+  "results": {
+    "1729": {
+      "validation_best_epoch": 2,
+      "validation_metrics": {
+        "n": 728,
+        "accuracy": 0.6442307692307693,
+        "macro_f1": 0.6009769093657242,
+        "negative_recall": 0.6407766990291263,
+        "neutral_recall": 0.33695652173913043,
+        "positive_recall": 0.8136094674556213,
+        "neutral_to_positive": 94,
+        "neutral_correct": 62,
+        "neutral_count": 184,
+        "mae": 0.5735441581601952,
+        "pearson": 0.6715728095435897,
+        "confusion_matrix": [
+          [
+            132,
+            30,
+            44
+          ],
+          [
+            28,
+            62,
+            94
+          ],
+          [
+            24,
+            39,
+            275
+          ]
+        ]
+      },
+      "test_metrics": {
+        "n": 727,
+        "accuracy": 0.6850068775790922,
+        "macro_f1": 0.6066535054868561,
+        "negative_recall": 0.6859903381642513,
+        "neutral_recall": 0.25316455696202533,
+        "positive_recall": 0.8729281767955801,
+        "neutral_to_positive": 88,
+        "neutral_correct": 40,
+        "neutral_count": 158,
+        "mae": 0.6123712954035815,
+        "pearson": 0.7016186936388923,
+        "confusion_matrix": [
+          [
+            142,
+            15,
+            50
+          ],
+          [
+            30,
+            40,
+            88
+          ],
+          [
+            23,
+            23,
+            316
+          ]
+        ]
+      },
+      "checkpoint": "/home/a631/gaotianchang/bert_base_controlled_20260926/outputs/bert_base_vs_minilm_20260926/student_bert_base_retest_seed1729/best_model.safetensors"
+    },
+    "2718": {
+      "validation_best_epoch": 3,
+      "validation_metrics": {
+        "n": 728,
+        "accuracy": 0.6456043956043956,
+        "macro_f1": 0.625657110185412,
+        "negative_recall": 0.6067961165048543,
+        "neutral_recall": 0.5054347826086957,
+        "positive_recall": 0.7455621301775148,
+        "neutral_to_positive": 74,
+        "neutral_correct": 93,
+        "neutral_count": 184,
+        "mae": 0.5741262296931102,
+        "pearson": 0.6882084305344713,
+        "confusion_matrix": [
+          [
+            125,
+            45,
+            36
+          ],
+          [
+            17,
+            93,
+            74
+          ],
+          [
+            23,
+            63,
+            252
+          ]
+        ]
+      },
+      "test_metrics": {
+        "n": 727,
+        "accuracy": 0.6740027510316369,
+        "macro_f1": 0.6212176006160054,
+        "negative_recall": 0.6618357487922706,
+        "neutral_recall": 0.37341772151898733,
+        "positive_recall": 0.8121546961325967,
+        "neutral_to_positive": 72,
+        "neutral_correct": 59,
+        "neutral_count": 158,
+        "mae": 0.638343028631958,
+        "pearson": 0.6882929196523445,
+        "confusion_matrix": [
+          [
+            137,
+            32,
+            38
+          ],
+          [
+            27,
+            59,
+            72
+          ],
+          [
+            25,
+            43,
+            294
+          ]
+        ]
+      },
+      "checkpoint": "/home/a631/gaotianchang/bert_base_controlled_20260926/outputs/bert_base_paper_20260926/full_seed2718/best_model.safetensors"
+    },
+    "3407": {
+      "validation_best_epoch": 2,
+      "validation_metrics": {
+        "n": 728,
+        "accuracy": 0.646978021978022,
+        "macro_f1": 0.5730320569369562,
+        "negative_recall": 0.7572815533980582,
+        "neutral_recall": 0.1956521739130435,
+        "positive_recall": 0.8254437869822485,
+        "neutral_to_positive": 102,
+        "neutral_correct": 36,
+        "neutral_count": 184,
+        "mae": 0.6150395533090437,
+        "pearson": 0.6860714480652313,
+        "confusion_matrix": [
+          [
+            156,
+            11,
+            39
+          ],
+          [
+            46,
+            36,
+            102
+          ],
+          [
+            44,
+            15,
+            279
+          ]
+        ]
+      },
+      "test_metrics": {
+        "n": 727,
+        "accuracy": 0.6918844566712518,
+        "macro_f1": 0.5629690781770864,
+        "negative_recall": 0.8067632850241546,
+        "neutral_recall": 0.10126582278481013,
+        "positive_recall": 0.8839779005524862,
+        "neutral_to_positive": 93,
+        "neutral_correct": 16,
+        "neutral_count": 158,
+        "mae": 0.6267768841498164,
+        "pearson": 0.7236311443916223,
+        "confusion_matrix": [
+          [
+            167,
+            6,
+            34
+          ],
+          [
+            49,
+            16,
+            93
+          ],
+          [
+            39,
+            3,
+            320
+          ]
+        ]
+      },
+      "checkpoint": "/home/a631/gaotianchang/bert_base_controlled_20260926/outputs/bert_base_paper_20260926/full_seed3407/best_model.safetensors"
+    }
+  }
+}

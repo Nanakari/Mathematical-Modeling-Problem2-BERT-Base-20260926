@@ -1,0 +1,37 @@
+{
+  "status": "evaluated_once_after_freeze",
+  "package_sha256": "634d95016f9ec9e31c951ee521e3d432ec27f0f56a93b12dacbd5d2993aef14b",
+  "freeze_manifest_sha256": "461695b5245f0af4402e17f478ea56d83b0e16a465252370710e9ff289b6ac0f",
+  "official_test": {
+    "n": 727,
+    "accuracy": 0.6960110041265475,
+    "macro_f1": 0.6349414581810644,
+    "negative_recall": 0.7053140096618358,
+    "neutral_recall": 0.33544303797468356,
+    "positive_recall": 0.8480662983425414,
+    "neutral_to_positive": 72,
+    "neutral_correct": 53,
+    "neutral_count": 158,
+    "mae": 0.6148942242987566,
+    "pearson": 0.703282883471865,
+    "confusion_matrix": [
+      [
+        146,
+        15,
+        46
+      ],
+      [
+        33,
+        53,
+        72
+      ],
+      [
+        24,
+        31,
+        307
+      ]
+    ]
+  },
+  "official_test_evaluated": true,
+  "no_model_selection_after_test": true
+}

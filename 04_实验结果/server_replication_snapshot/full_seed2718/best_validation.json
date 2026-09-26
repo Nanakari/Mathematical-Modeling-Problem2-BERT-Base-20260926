@@ -1,0 +1,39 @@
+{
+  "epoch": 3,
+  "metrics": {
+    "n": 728,
+    "accuracy": 0.6456043956043956,
+    "macro_f1": 0.625657110185412,
+    "negative_recall": 0.6067961165048543,
+    "neutral_recall": 0.5054347826086957,
+    "positive_recall": 0.7455621301775148,
+    "neutral_to_positive": 74,
+    "neutral_correct": 93,
+    "neutral_count": 184,
+    "mae": 0.5741262296931102,
+    "pearson": 0.6882084305344713,
+    "confusion_matrix": [
+      [
+        125,
+        45,
+        36
+      ],
+      [
+        17,
+        93,
+        74
+      ],
+      [
+        23,
+        63,
+        252
+      ]
+    ]
+  },
+  "rank": [
+    0.6456043956043956,
+    0.625657110185412,
+    -0.5741262296931102
+  ],
+  "official_test_evaluated": false
+}

@@ -1,0 +1,227 @@
+{
+  "complete": {
+    "n": 728,
+    "accuracy": 0.6456043956043956,
+    "macro_f1": 0.6049175195930024,
+    "negative_recall": 0.6213592233009708,
+    "neutral_recall": 0.358695652173913,
+    "positive_recall": 0.8165680473372781,
+    "neutral_to_positive": 93,
+    "neutral_correct": 66,
+    "neutral_count": 184,
+    "mae": 0.5807648946500414,
+    "pearson": 0.6642705128692059,
+    "confusion_matrix": [
+      [
+        128,
+        31,
+        47
+      ],
+      [
+        25,
+        66,
+        93
+      ],
+      [
+        23,
+        39,
+        276
+      ]
+    ]
+  },
+  "missing_scenarios": {
+    "all|random|0.1": {
+      "n": 728,
+      "accuracy": 0.6277472527472527,
+      "macro_f1": 0.5847819868686407,
+      "negative_recall": 0.5922330097087378,
+      "neutral_recall": 0.33695652173913043,
+      "positive_recall": 0.8076923076923077,
+      "neutral_to_positive": 99,
+      "neutral_correct": 62,
+      "neutral_count": 184,
+      "mae": 0.5949776077049447,
+      "pearson": 0.6382709056880534,
+      "confusion_matrix": [
+        [
+          122,
+          36,
+          48
+        ],
+        [
+          23,
+          62,
+          99
+        ],
+        [
+          25,
+          40,
+          273
+        ]
+      ]
+    },
+    "all|random|0.5": {
+      "n": 728,
+      "accuracy": 0.614010989010989,
+      "macro_f1": 0.5927505250525053,
+      "negative_recall": 0.5194174757281553,
+      "neutral_recall": 0.5163043478260869,
+      "positive_recall": 0.7248520710059172,
+      "neutral_to_positive": 70,
+      "neutral_correct": 95,
+      "neutral_count": 184,
+      "mae": 0.6444784850086812,
+      "pearson": 0.5493329182916352,
+      "confusion_matrix": [
+        [
+          107,
+          52,
+          47
+        ],
+        [
+          19,
+          95,
+          70
+        ],
+        [
+          20,
+          73,
+          245
+        ]
+      ]
+    },
+    "all|random|0.7": {
+      "n": 728,
+      "accuracy": 0.532967032967033,
+      "macro_f1": 0.524050622753726,
+      "negative_recall": 0.4320388349514563,
+      "neutral_recall": 0.5760869565217391,
+      "positive_recall": 0.5710059171597633,
+      "neutral_to_positive": 59,
+      "neutral_correct": 106,
+      "neutral_count": 184,
+      "mae": 0.6881337563128589,
+      "pearson": 0.4584882032527711,
+      "confusion_matrix": [
+        [
+          89,
+          72,
+          45
+        ],
+        [
+          19,
+          106,
+          59
+        ],
+        [
+          26,
+          119,
+          193
+        ]
+      ]
+    }
+  },
+  "missing_scenario_count": 3,
+  "missing_scenario_mean_accuracy": 0.5915750915750916,
+  "missing_all_random": {
+    "all|random|0.1": {
+      "n": 728,
+      "accuracy": 0.6277472527472527,
+      "macro_f1": 0.5847819868686407,
+      "negative_recall": 0.5922330097087378,
+      "neutral_recall": 0.33695652173913043,
+      "positive_recall": 0.8076923076923077,
+      "neutral_to_positive": 99,
+      "neutral_correct": 62,
+      "neutral_count": 184,
+      "mae": 0.5949776077049447,
+      "pearson": 0.6382709056880534,
+      "confusion_matrix": [
+        [
+          122,
+          36,
+          48
+        ],
+        [
+          23,
+          62,
+          99
+        ],
+        [
+          25,
+          40,
+          273
+        ]
+      ]
+    },
+    "all|random|0.5": {
+      "n": 728,
+      "accuracy": 0.614010989010989,
+      "macro_f1": 0.5927505250525053,
+      "negative_recall": 0.5194174757281553,
+      "neutral_recall": 0.5163043478260869,
+      "positive_recall": 0.7248520710059172,
+      "neutral_to_positive": 70,
+      "neutral_correct": 95,
+      "neutral_count": 184,
+      "mae": 0.6444784850086812,
+      "pearson": 0.5493329182916352,
+      "confusion_matrix": [
+        [
+          107,
+          52,
+          47
+        ],
+        [
+          19,
+          95,
+          70
+        ],
+        [
+          20,
+          73,
+          245
+        ]
+      ]
+    },
+    "all|random|0.7": {
+      "n": 728,
+      "accuracy": 0.532967032967033,
+      "macro_f1": 0.524050622753726,
+      "negative_recall": 0.4320388349514563,
+      "neutral_recall": 0.5760869565217391,
+      "positive_recall": 0.5710059171597633,
+      "neutral_to_positive": 59,
+      "neutral_correct": 106,
+      "neutral_count": 184,
+      "mae": 0.6881337563128589,
+      "pearson": 0.4584882032527711,
+      "confusion_matrix": [
+        [
+          89,
+          72,
+          45
+        ],
+        [
+          19,
+          106,
+          59
+        ],
+        [
+          26,
+          119,
+          193
+        ]
+      ]
+    }
+  },
+  "scenario_set": "quick_all_random",
+  "scenario_count": 4,
+  "selection_rank": [
+    0.6456043956043956,
+    0.6049175195930024,
+    -0.5807648946500414
+  ],
+  "official_test_evaluated": false,
+  "checkpoint_sha256": "fd382bb6f20ea95bd91ff7d423e56a3e6fe64e107d1a942fe18d6c87434384cd"
+}

@@ -1,0 +1,206 @@
+{
+  "full": {
+    "best_epoch": 2,
+    "metrics": {
+      "n": 728,
+      "accuracy": 0.6442307692307693,
+      "macro_f1": 0.6009769093657242,
+      "negative_recall": 0.6407766990291263,
+      "neutral_recall": 0.33695652173913043,
+      "positive_recall": 0.8136094674556213,
+      "neutral_to_positive": 94,
+      "neutral_correct": 62,
+      "neutral_count": 184,
+      "mae": 0.5735441581601952,
+      "pearson": 0.6715728095435897,
+      "confusion_matrix": [
+        [
+          132,
+          30,
+          44
+        ],
+        [
+          28,
+          62,
+          94
+        ],
+        [
+          24,
+          39,
+          275
+        ]
+      ]
+    },
+    "checkpoint": "/home/a631/gaotianchang/bert_base_controlled_20260926/outputs/bert_base_vs_minilm_20260926/student_bert_base_retest_seed1729/best_model.safetensors"
+  },
+  "text_only": {
+    "best_epoch": 2,
+    "metrics": {
+      "n": 728,
+      "accuracy": 0.6483516483516484,
+      "macro_f1": 0.6004532763892735,
+      "negative_recall": 0.6747572815533981,
+      "neutral_recall": 0.30434782608695654,
+      "positive_recall": 0.8195266272189349,
+      "neutral_to_positive": 100,
+      "neutral_correct": 56,
+      "neutral_count": 184,
+      "mae": 0.5800573625448313,
+      "pearson": 0.664924994501832,
+      "confusion_matrix": [
+        [
+          139,
+          20,
+          47
+        ],
+        [
+          28,
+          56,
+          100
+        ],
+        [
+          31,
+          30,
+          277
+        ]
+      ]
+    },
+    "checkpoint": "/home/a631/gaotianchang/bert_base_controlled_20260926/outputs/bert_base_paper_20260926/text_only_seed1729/best_model.safetensors"
+  },
+  "text_audio": {
+    "best_epoch": 2,
+    "metrics": {
+      "n": 728,
+      "accuracy": 0.6497252747252747,
+      "macro_f1": 0.6012569867243066,
+      "negative_recall": 0.7087378640776699,
+      "neutral_recall": 0.29891304347826086,
+      "positive_recall": 0.8047337278106509,
+      "neutral_to_positive": 95,
+      "neutral_correct": 55,
+      "neutral_count": 184,
+      "mae": 0.5780721321742941,
+      "pearson": 0.6692189377034027,
+      "confusion_matrix": [
+        [
+          146,
+          19,
+          41
+        ],
+        [
+          34,
+          55,
+          95
+        ],
+        [
+          34,
+          32,
+          272
+        ]
+      ]
+    },
+    "checkpoint": "/home/a631/gaotianchang/bert_base_controlled_20260926/outputs/bert_base_paper_20260926/text_audio_seed1729/best_model.safetensors"
+  },
+  "text_vision": {
+    "best_epoch": 2,
+    "metrics": {
+      "n": 728,
+      "accuracy": 0.6456043956043956,
+      "macro_f1": 0.6049175195930024,
+      "negative_recall": 0.6213592233009708,
+      "neutral_recall": 0.358695652173913,
+      "positive_recall": 0.8165680473372781,
+      "neutral_to_positive": 93,
+      "neutral_correct": 66,
+      "neutral_count": 184,
+      "mae": 0.5807648946500414,
+      "pearson": 0.6642705128692059,
+      "confusion_matrix": [
+        [
+          128,
+          31,
+          47
+        ],
+        [
+          25,
+          66,
+          93
+        ],
+        [
+          23,
+          39,
+          276
+        ]
+      ]
+    },
+    "checkpoint": "/home/a631/gaotianchang/bert_base_controlled_20260926/outputs/bert_base_paper_20260926/text_vision_seed1729/best_model.safetensors"
+  },
+  "no_av_direct": {
+    "best_epoch": 2,
+    "metrics": {
+      "n": 728,
+      "accuracy": 0.6565934065934066,
+      "macro_f1": 0.6275849577120973,
+      "negative_recall": 0.6553398058252428,
+      "neutral_recall": 0.43478260869565216,
+      "positive_recall": 0.7781065088757396,
+      "neutral_to_positive": 79,
+      "neutral_correct": 80,
+      "neutral_count": 184,
+      "mae": 0.5628709916107275,
+      "pearson": 0.6882146839947261,
+      "confusion_matrix": [
+        [
+          135,
+          35,
+          36
+        ],
+        [
+          25,
+          80,
+          79
+        ],
+        [
+          27,
+          48,
+          263
+        ]
+      ]
+    },
+    "checkpoint": "/home/a631/gaotianchang/bert_base_controlled_20260926/outputs/bert_base_paper_20260926/no_av_direct_seed1729/best_model.safetensors"
+  },
+  "no_missing_aug": {
+    "best_epoch": 4,
+    "metrics": {
+      "n": 728,
+      "accuracy": 0.6428571428571429,
+      "macro_f1": 0.6101312293408716,
+      "negative_recall": 0.6116504854368932,
+      "neutral_recall": 0.41847826086956524,
+      "positive_recall": 0.7840236686390533,
+      "neutral_to_positive": 81,
+      "neutral_correct": 77,
+      "neutral_count": 184,
+      "mae": 0.5815224616614344,
+      "pearson": 0.6736988737795526,
+      "confusion_matrix": [
+        [
+          126,
+          40,
+          40
+        ],
+        [
+          26,
+          77,
+          81
+        ],
+        [
+          27,
+          46,
+          265
+        ]
+      ]
+    },
+    "checkpoint": "/home/a631/gaotianchang/bert_base_controlled_20260926/outputs/bert_base_paper_20260926/no_missing_aug_seed1729/best_model.safetensors"
+  }
+}

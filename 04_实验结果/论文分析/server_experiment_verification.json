@@ -1,0 +1,347 @@
+{
+  "same_data_scaler_source_and_backbone": true,
+  "same_validation_selection_rule": true,
+  "no_official_test_access": true,
+  "runs": {
+    "full": {
+      "config": "/home/a631/gaotianchang/bert_base_controlled_20260926/configs/v5/student_bert_base_retest_seed1729.json",
+      "output": "/home/a631/gaotianchang/bert_base_controlled_20260926/outputs/bert_base_vs_minilm_20260926/student_bert_base_retest_seed1729",
+      "changed_fields": [],
+      "completed_epochs": 6,
+      "best_epoch": 2,
+      "metrics": {
+        "n": 728,
+        "accuracy": 0.6442307692307693,
+        "macro_f1": 0.6009769093657242,
+        "negative_recall": 0.6407766990291263,
+        "neutral_recall": 0.33695652173913043,
+        "positive_recall": 0.8136094674556213,
+        "neutral_to_positive": 94,
+        "neutral_correct": 62,
+        "neutral_count": 184,
+        "mae": 0.5735441581601952,
+        "pearson": 0.6715728095435897,
+        "confusion_matrix": [
+          [
+            132,
+            30,
+            44
+          ],
+          [
+            28,
+            62,
+            94
+          ],
+          [
+            24,
+            39,
+            275
+          ]
+        ]
+      },
+      "checkpoint_sha256": "6dc2c9c5fdf9e7b4202473d9531e8c9177d3ed855711184edeb472873b590f4a"
+    },
+    "text_only": {
+      "config": "/home/a631/gaotianchang/bert_base_controlled_20260926/outputs/bert_base_paper_20260926/text_only_seed1729.json",
+      "output": "/home/a631/gaotianchang/bert_base_controlled_20260926/outputs/bert_base_paper_20260926/text_only_seed1729",
+      "changed_fields": [
+        "model.active_modalities"
+      ],
+      "completed_epochs": 6,
+      "best_epoch": 2,
+      "metrics": {
+        "n": 728,
+        "accuracy": 0.6483516483516484,
+        "macro_f1": 0.6004532763892735,
+        "negative_recall": 0.6747572815533981,
+        "neutral_recall": 0.30434782608695654,
+        "positive_recall": 0.8195266272189349,
+        "neutral_to_positive": 100,
+        "neutral_correct": 56,
+        "neutral_count": 184,
+        "mae": 0.5800573625448313,
+        "pearson": 0.664924994501832,
+        "confusion_matrix": [
+          [
+            139,
+            20,
+            47
+          ],
+          [
+            28,
+            56,
+            100
+          ],
+          [
+            31,
+            30,
+            277
+          ]
+        ]
+      },
+      "checkpoint_sha256": "054f4257d6aef6d3093aceef53b2ced3b77ba5d80123d4b5d653751bc7bdf2f2"
+    },
+    "text_audio": {
+      "config": "/home/a631/gaotianchang/bert_base_controlled_20260926/outputs/bert_base_paper_20260926/text_audio_seed1729.json",
+      "output": "/home/a631/gaotianchang/bert_base_controlled_20260926/outputs/bert_base_paper_20260926/text_audio_seed1729",
+      "changed_fields": [
+        "model.active_modalities"
+      ],
+      "completed_epochs": 6,
+      "best_epoch": 2,
+      "metrics": {
+        "n": 728,
+        "accuracy": 0.6497252747252747,
+        "macro_f1": 0.6012569867243066,
+        "negative_recall": 0.7087378640776699,
+        "neutral_recall": 0.29891304347826086,
+        "positive_recall": 0.8047337278106509,
+        "neutral_to_positive": 95,
+        "neutral_correct": 55,
+        "neutral_count": 184,
+        "mae": 0.5780721321742941,
+        "pearson": 0.6692189377034027,
+        "confusion_matrix": [
+          [
+            146,
+            19,
+            41
+          ],
+          [
+            34,
+            55,
+            95
+          ],
+          [
+            34,
+            32,
+            272
+          ]
+        ]
+      },
+      "checkpoint_sha256": "0f800118fdd515f28e0fca6f22f8fa04ed32cb0e958063a0ab44b208ecb8682a"
+    },
+    "text_vision": {
+      "config": "/home/a631/gaotianchang/bert_base_controlled_20260926/outputs/bert_base_paper_20260926/text_vision_seed1729.json",
+      "output": "/home/a631/gaotianchang/bert_base_controlled_20260926/outputs/bert_base_paper_20260926/text_vision_seed1729",
+      "changed_fields": [
+        "model.active_modalities"
+      ],
+      "completed_epochs": 6,
+      "best_epoch": 2,
+      "metrics": {
+        "n": 728,
+        "accuracy": 0.6456043956043956,
+        "macro_f1": 0.6049175195930024,
+        "negative_recall": 0.6213592233009708,
+        "neutral_recall": 0.358695652173913,
+        "positive_recall": 0.8165680473372781,
+        "neutral_to_positive": 93,
+        "neutral_correct": 66,
+        "neutral_count": 184,
+        "mae": 0.5807648946500414,
+        "pearson": 0.6642705128692059,
+        "confusion_matrix": [
+          [
+            128,
+            31,
+            47
+          ],
+          [
+            25,
+            66,
+            93
+          ],
+          [
+            23,
+            39,
+            276
+          ]
+        ]
+      },
+      "checkpoint_sha256": "fd382bb6f20ea95bd91ff7d423e56a3e6fe64e107d1a942fe18d6c87434384cd"
+    },
+    "no_av_direct": {
+      "config": "/home/a631/gaotianchang/bert_base_controlled_20260926/outputs/bert_base_paper_20260926/no_av_direct_seed1729.json",
+      "output": "/home/a631/gaotianchang/bert_base_controlled_20260926/outputs/bert_base_paper_20260926/no_av_direct_seed1729",
+      "changed_fields": [
+        "model.av_direct"
+      ],
+      "completed_epochs": 6,
+      "best_epoch": 2,
+      "metrics": {
+        "n": 728,
+        "accuracy": 0.6565934065934066,
+        "macro_f1": 0.6275849577120973,
+        "negative_recall": 0.6553398058252428,
+        "neutral_recall": 0.43478260869565216,
+        "positive_recall": 0.7781065088757396,
+        "neutral_to_positive": 79,
+        "neutral_correct": 80,
+        "neutral_count": 184,
+        "mae": 0.5628709916107275,
+        "pearson": 0.6882146839947261,
+        "confusion_matrix": [
+          [
+            135,
+            35,
+            36
+          ],
+          [
+            25,
+            80,
+            79
+          ],
+          [
+            27,
+            48,
+            263
+          ]
+        ]
+      },
+      "checkpoint_sha256": "e930daa75277ec3563629c8f6cfe805e9072d481db193b8e1445f09c373daf45"
+    },
+    "no_missing_aug": {
+      "config": "/home/a631/gaotianchang/bert_base_controlled_20260926/outputs/bert_base_paper_20260926/no_missing_aug_seed1729.json",
+      "output": "/home/a631/gaotianchang/bert_base_controlled_20260926/outputs/bert_base_paper_20260926/no_missing_aug_seed1729",
+      "changed_fields": [
+        "training.view_policy"
+      ],
+      "completed_epochs": 8,
+      "best_epoch": 4,
+      "metrics": {
+        "n": 728,
+        "accuracy": 0.6428571428571429,
+        "macro_f1": 0.6101312293408716,
+        "negative_recall": 0.6116504854368932,
+        "neutral_recall": 0.41847826086956524,
+        "positive_recall": 0.7840236686390533,
+        "neutral_to_positive": 81,
+        "neutral_correct": 77,
+        "neutral_count": 184,
+        "mae": 0.5815224616614344,
+        "pearson": 0.6736988737795526,
+        "confusion_matrix": [
+          [
+            126,
+            40,
+            40
+          ],
+          [
+            26,
+            77,
+            81
+          ],
+          [
+            27,
+            46,
+            265
+          ]
+        ]
+      },
+      "checkpoint_sha256": "50ba73e70c91d65ca978cf2f71cf7e9fbc013f02d20876ea4fa97255c45603dd"
+    },
+    "full_seed2718": {
+      "config": "/home/a631/gaotianchang/bert_base_controlled_20260926/outputs/bert_base_paper_20260926/full_seed2718.json",
+      "output": "/home/a631/gaotianchang/bert_base_controlled_20260926/outputs/bert_base_paper_20260926/full_seed2718",
+      "changed_fields": [
+        "training.seed"
+      ],
+      "completed_epochs": 7,
+      "best_epoch": 3,
+      "metrics": {
+        "n": 728,
+        "accuracy": 0.6456043956043956,
+        "macro_f1": 0.625657110185412,
+        "negative_recall": 0.6067961165048543,
+        "neutral_recall": 0.5054347826086957,
+        "positive_recall": 0.7455621301775148,
+        "neutral_to_positive": 74,
+        "neutral_correct": 93,
+        "neutral_count": 184,
+        "mae": 0.5741262296931102,
+        "pearson": 0.6882084305344713,
+        "confusion_matrix": [
+          [
+            125,
+            45,
+            36
+          ],
+          [
+            17,
+            93,
+            74
+          ],
+          [
+            23,
+            63,
+            252
+          ]
+        ]
+      },
+      "checkpoint_sha256": "39b89727fee809e70f69112a7067e2cd1afd48ec4474915fccdbbc368aa9854a"
+    },
+    "full_seed3407": {
+      "config": "/home/a631/gaotianchang/bert_base_controlled_20260926/outputs/bert_base_paper_20260926/full_seed3407.json",
+      "output": "/home/a631/gaotianchang/bert_base_controlled_20260926/outputs/bert_base_paper_20260926/full_seed3407",
+      "changed_fields": [
+        "training.seed"
+      ],
+      "completed_epochs": 6,
+      "best_epoch": 2,
+      "metrics": {
+        "n": 728,
+        "accuracy": 0.646978021978022,
+        "macro_f1": 0.5730320569369562,
+        "negative_recall": 0.7572815533980582,
+        "neutral_recall": 0.1956521739130435,
+        "positive_recall": 0.8254437869822485,
+        "neutral_to_positive": 102,
+        "neutral_correct": 36,
+        "neutral_count": 184,
+        "mae": 0.6150395533090437,
+        "pearson": 0.6860714480652313,
+        "confusion_matrix": [
+          [
+            156,
+            11,
+            39
+          ],
+          [
+            46,
+            36,
+            102
+          ],
+          [
+            44,
+            15,
+            279
+          ]
+        ]
+      },
+      "checkpoint_sha256": "2eec4620a86fc871a559baa3c6c5c2f5546b60a9f419bc48c188607db4a3b1b0"
+    }
+  },
+  "three_seed_statistics": {
+    "accuracy": {
+      "mean": 0.6456043956043956,
+      "sample_sd": 0.0013736263736263687
+    },
+    "macro_f1": {
+      "mean": 0.5998886921626975,
+      "sample_sd": 0.026329398395356935
+    },
+    "mae": {
+      "mean": 0.5875699803874497,
+      "sample_sd": 0.023791128161321704
+    },
+    "pearson": {
+      "mean": 0.6819508960477642,
+      "sample_sd": 0.009050976916032637
+    },
+    "neutral_recall": {
+      "mean": 0.34601449275362317,
+      "sample_sd": 0.15508981685380066
+    }
+  }
+}

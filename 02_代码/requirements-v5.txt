@@ -1,0 +1,9 @@
+# Direct non-Torch dependencies verified against the local v5 CPU-smoke environment.
+# Install a CUDA-enabled PyTorch build matching the target host's driver separately.
+transformers==4.46.3
+tokenizers==0.20.3
+safetensors==0.8.0
+numpy==2.0.2
+scikit-learn==1.6.1
+sentencepiece==0.2.1
+protobuf==5.29.3

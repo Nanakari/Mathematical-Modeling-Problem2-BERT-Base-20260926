@@ -1,0 +1,179 @@
+{
+  "candidate": "bert_base_no_av_direct_seed2718",
+  "seed": 2718,
+  "best_epoch": 4,
+  "complete": {
+    "n": 728,
+    "accuracy": 0.6538461538461539,
+    "macro_f1": 0.61263940263207,
+    "negative_recall": 0.7475728155339806,
+    "neutral_recall": 0.33695652173913043,
+    "positive_recall": 0.7692307692307693,
+    "neutral_to_positive": 82,
+    "neutral_correct": 62,
+    "neutral_count": 184,
+    "mae": 0.6302571415614623,
+    "pearson": 0.6873664196665972,
+    "confusion_matrix": [
+      [
+        154,
+        23,
+        29
+      ],
+      [
+        40,
+        62,
+        82
+      ],
+      [
+        38,
+        40,
+        260
+      ]
+    ]
+  },
+  "missing_all_random": {
+    "0.1": {
+      "n": 728,
+      "accuracy": 0.635989010989011,
+      "macro_f1": 0.594637444382466,
+      "negative_recall": 0.7378640776699029,
+      "neutral_recall": 0.32065217391304346,
+      "positive_recall": 0.7455621301775148,
+      "neutral_to_positive": 81,
+      "neutral_correct": 59,
+      "neutral_count": 184,
+      "mae": 0.6421099301263854,
+      "pearson": 0.6576455851037426,
+      "confusion_matrix": [
+        [
+          152,
+          19,
+          35
+        ],
+        [
+          44,
+          59,
+          81
+        ],
+        [
+          43,
+          43,
+          252
+        ]
+      ]
+    },
+    "0.5": {
+      "n": 728,
+      "accuracy": 0.6112637362637363,
+      "macro_f1": 0.5853375650219891,
+      "negative_recall": 0.6456310679611651,
+      "neutral_recall": 0.41847826086956524,
+      "positive_recall": 0.6952662721893491,
+      "neutral_to_positive": 65,
+      "neutral_correct": 77,
+      "neutral_count": 184,
+      "mae": 0.6941794931765769,
+      "pearson": 0.5497311538498992,
+      "confusion_matrix": [
+        [
+          133,
+          28,
+          45
+        ],
+        [
+          42,
+          77,
+          65
+        ],
+        [
+          47,
+          56,
+          235
+        ]
+      ]
+    },
+    "0.7": {
+      "n": 728,
+      "accuracy": 0.5357142857142857,
+      "macro_f1": 0.5181221051272534,
+      "negative_recall": 0.5533980582524272,
+      "neutral_recall": 0.41847826086956524,
+      "positive_recall": 0.5887573964497042,
+      "neutral_to_positive": 59,
+      "neutral_correct": 77,
+      "neutral_count": 184,
+      "mae": 0.7236940586673362,
+      "pearson": 0.4701231280355513,
+      "confusion_matrix": [
+        [
+          114,
+          43,
+          49
+        ],
+        [
+          48,
+          77,
+          59
+        ],
+        [
+          50,
+          89,
+          199
+        ]
+      ]
+    }
+  },
+  "selection_order": [
+    "complete_accuracy",
+    "macro_f1",
+    "lower_mae"
+  ],
+  "rank": [
+    0.6538461538461539,
+    0.61263940263207,
+    -0.6302571415614623
+  ],
+  "checkpoint": "best_model.safetensors",
+  "checkpoint_sha256": "fe0d3f39e9c6825b9db1d0dc7a96f07732fa89d8dbbaf9bfae0a578f8c69a758",
+  "model_parameters": 109786564,
+  "model_config": {
+    "fusion_dim": 128,
+    "temporal_width": 64,
+    "audio_encoder": "baseline",
+    "vision_encoder": "baseline",
+    "pooling": "masked_mean",
+    "text_pooling": "masked_mean",
+    "fusion": "pooled",
+    "num_heads": 4,
+    "dropout": 0.1,
+    "av_direct": false,
+    "av_direct_scale": 0.1,
+    "neutral_aux": false,
+    "teacher_feature_dim": null,
+    "joint_prediction": false,
+    "backbone_dir": "models/teacher_student_v5_20260924/bert_base_uncased",
+    "load_pretrained": true,
+    "audio_layers": 2,
+    "vision_layers": 2
+  },
+  "resume_contract": {
+    "split_fingerprints": {
+      "train": {
+        "split": "train",
+        "count": 3395,
+        "sha256": "c11f547731688aa352ea1fd33a888768c78688bd772803ee0f0a9909a0795249"
+      },
+      "valid": {
+        "split": "valid",
+        "count": 728,
+        "sha256": "e2c01f7c7d167e498db557adaabf7ad8bfb9e42571c94b389980b05b6084e7de"
+      }
+    },
+    "scaler_sha256": "ab58be88c20f35c945a0701156321f4299f9489a11fd379f2d0f51f9968c1a14",
+    "teacher": {
+      "enabled": false
+    }
+  },
+  "official_test_evaluated": false
+}

@@ -1,0 +1,68 @@
+{
+  "training_source": {
+    "path": "D:\\codex_projects\\projects\\Mathematical Modeling\\problem2\\outputs\\teacher_student_v5_20260924\\data\\train_valid_only_v5.pkl",
+    "sha256": "26eb21c32183a9b86151d20b3c2bc189241c3c17fe982f99889a51b7a7967196",
+    "keys": [
+      "train",
+      "valid"
+    ],
+    "counts": {
+      "train": 3395,
+      "valid": 728
+    },
+    "label_counts": {
+      "train": [
+        967,
+        758,
+        1670
+      ],
+      "valid": [
+        206,
+        184,
+        338
+      ]
+    },
+    "cross_split_video_overlap": 0
+  },
+  "model": {
+    "backbone": "google-bert/bert-base-uncased",
+    "revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+    "source": "fixed google-bert/bert-base-uncased general pretraining; see pretrained_provenance.json"
+  },
+  "controlled_config_changes": {
+    "full_seed2718": {
+      "training.seed": {
+        "base": 1729,
+        "experiment": 2718
+      }
+    },
+    "full_seed3407": {
+      "training.seed": {
+        "base": 1729,
+        "experiment": 3407
+      }
+    },
+    "no_missing_aug_seed1729": {
+      "training.view_policy": {
+        "base": "mixed",
+        "experiment": "full"
+      }
+    }
+  },
+  "prepared_runs_matching_primary_data_scaler_source_and_backbone": {
+    "full_seed2718": true
+  },
+  "ablation_wrapper_sha256": "a5c101cd6b93873ebfda391321fbd6554829668ebcd8c8fdabcf03ea84cc46dd",
+  "historical_test": {
+    "n": 727,
+    "accuracy": 0.6960110041265475,
+    "frozen_package_sha256": "634d95016f9ec9e31c951ee521e3d432ec27f0f56a93b12dacbd5d2993aef14b",
+    "previously_accessed_in_project": true,
+    "no_new_test_files_in_this_lane": true
+  },
+  "attachment3_rows": 30,
+  "attachment3_feature_files": 30,
+  "attachment3_has_no_labels": true,
+  "missing_duration_measurement": "realized_missing_lengths.csv measures removed observed aligned slots; source files contain no physical seconds per position",
+  "scope_exception": "50 MB submission attachment limit explicitly deferred by user; BERT-Base package remains oversized"
+}

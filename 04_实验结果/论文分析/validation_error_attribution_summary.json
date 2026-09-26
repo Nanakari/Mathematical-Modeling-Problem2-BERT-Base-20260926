@@ -1,0 +1,47 @@
+{
+  "source": "frozen_BERT_Base_FP16_package_validation_complete_case",
+  "n": 728,
+  "confusion_matrix": [
+    [
+      136,
+      28,
+      42
+    ],
+    [
+      30,
+      71,
+      83
+    ],
+    [
+      27,
+      44,
+      267
+    ]
+  ],
+  "classification_error_count": 254,
+  "classification_error_types": {
+    "0_to_1": 28,
+    "0_to_2": 42,
+    "1_to_0": 30,
+    "1_to_2": 83,
+    "2_to_0": 27,
+    "2_to_1": 44,
+    "correct": 474
+  },
+  "overall_mae": 0.570786556105544,
+  "mae_by_true_class": {
+    "0": 0.7471104100328482,
+    "1": 0.31437640750284673,
+    "2": 0.6029071283951049
+  },
+  "mae_when_classification_correct": 0.5162246648795934,
+  "mae_when_classification_wrong": 0.6726067783146011,
+  "regression_error_quartiles": {
+    "q25": 0.19221873208880424,
+    "q75": 0.8119751885533333
+  },
+  "classification_correct_but_large_regression_error": 112,
+  "classification_wrong_but_small_regression_error": 28,
+  "opposite_polarity_conflict_count": 2,
+  "opposite_polarity_conflict_definition": "Predicted negative with positive raw intensity, or predicted positive with negative raw intensity; neutral excluded"
+}

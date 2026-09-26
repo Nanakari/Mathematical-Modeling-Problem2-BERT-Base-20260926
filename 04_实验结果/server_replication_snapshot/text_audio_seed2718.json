@@ -1,0 +1,72 @@
+{
+  "schema_version": 5,
+  "candidate_name": "bert_base_text_audio_seed2718",
+  "output": "outputs/bert_base_paper_20260926/text_audio_seed2718",
+  "model_id": "google-bert/bert-base-uncased",
+  "model_revision": "86b5e0934494bd15c9632b12f734a8a67f723594",
+  "model": {
+    "backbone_dir": "models/teacher_student_v5_20260924/bert_base_uncased",
+    "load_pretrained": true,
+    "fusion_dim": 128,
+    "temporal_width": 64,
+    "audio_encoder": "baseline",
+    "vision_encoder": "baseline",
+    "audio_layers": 2,
+    "vision_layers": 2,
+    "pooling": "masked_mean",
+    "fusion": "pooled",
+    "num_heads": 4,
+    "dropout": 0.1,
+    "av_direct": true,
+    "av_direct_scale": 0.1,
+    "neutral_aux": false,
+    "active_modalities": [
+      "text",
+      "audio"
+    ]
+  },
+  "data": {
+    "max_text_length": 128,
+    "feature_clip": 5.0,
+    "source_vocab": "models/teacher_student_v5_20260924/bert_base_uncased/vocab.txt"
+  },
+  "training": {
+    "seed": 2718,
+    "epochs": 15,
+    "batch_size": 32,
+    "gradient_accumulation_steps": 1,
+    "encoder_lr": 2e-05,
+    "head_lr": 0.0005,
+    "weight_decay": 0.01,
+    "amp_dtype": "fp16",
+    "view_policy": "mixed",
+    "clean_probability": 0.6,
+    "mask_rates": [
+      0.1,
+      0.3,
+      0.5
+    ],
+    "regression_loss_weight": 0.2,
+    "neutral_aux_weight": 0.0,
+    "max_grad_norm": 1.0,
+    "patience": 4,
+    "evaluation_mask_rates": [
+      0.1,
+      0.5,
+      0.7
+    ],
+    "validation_mask_seed": 101
+  },
+  "distillation": {
+    "enabled": false,
+    "temperature": 2.0,
+    "feature_components": [
+      "text",
+      "audio",
+      "vision",
+      "fused"
+    ],
+    "feature_weight": 0.1,
+    "logit_weight": 1.0
+  }
+}

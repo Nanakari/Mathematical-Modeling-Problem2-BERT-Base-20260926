@@ -1,0 +1,179 @@
+{
+  "candidate": "student_bert_base_retest_seed1729",
+  "seed": 1729,
+  "best_epoch": 2,
+  "complete": {
+    "n": 728,
+    "accuracy": 0.6510989010989011,
+    "macro_f1": 0.6158206248308972,
+    "negative_recall": 0.6601941747572816,
+    "neutral_recall": 0.3858695652173913,
+    "positive_recall": 0.7899408284023669,
+    "neutral_to_positive": 83,
+    "neutral_correct": 71,
+    "neutral_count": 184,
+    "mae": 0.5708167092199181,
+    "pearson": 0.6791375318803243,
+    "confusion_matrix": [
+      [
+        136,
+        28,
+        42
+      ],
+      [
+        30,
+        71,
+        83
+      ],
+      [
+        27,
+        44,
+        267
+      ]
+    ]
+  },
+  "missing_all_random": {
+    "0.1": {
+      "n": 728,
+      "accuracy": 0.6387362637362637,
+      "macro_f1": 0.6090518814757853,
+      "negative_recall": 0.6310679611650486,
+      "neutral_recall": 0.41847826086956524,
+      "positive_recall": 0.7633136094674556,
+      "neutral_to_positive": 80,
+      "neutral_correct": 77,
+      "neutral_count": 184,
+      "mae": 0.5824800340233596,
+      "pearson": 0.6576068361092617,
+      "confusion_matrix": [
+        [
+          130,
+          35,
+          41
+        ],
+        [
+          27,
+          77,
+          80
+        ],
+        [
+          28,
+          52,
+          258
+        ]
+      ]
+    },
+    "0.5": {
+      "n": 728,
+      "accuracy": 0.5961538461538461,
+      "macro_f1": 0.5803403223561837,
+      "negative_recall": 0.5145631067961165,
+      "neutral_recall": 0.5597826086956522,
+      "positive_recall": 0.665680473372781,
+      "neutral_to_positive": 57,
+      "neutral_correct": 103,
+      "neutral_count": 184,
+      "mae": 0.6417352262638755,
+      "pearson": 0.5527344693766807,
+      "confusion_matrix": [
+        [
+          106,
+          61,
+          39
+        ],
+        [
+          24,
+          103,
+          57
+        ],
+        [
+          28,
+          85,
+          225
+        ]
+      ]
+    },
+    "0.7": {
+      "n": 728,
+      "accuracy": 0.5054945054945055,
+      "macro_f1": 0.49741693448902735,
+      "negative_recall": 0.3932038834951456,
+      "neutral_recall": 0.5978260869565217,
+      "positive_recall": 0.5236686390532544,
+      "neutral_to_positive": 52,
+      "neutral_correct": 110,
+      "neutral_count": 184,
+      "mae": 0.6944787789054296,
+      "pearson": 0.4643397886035241,
+      "confusion_matrix": [
+        [
+          81,
+          88,
+          37
+        ],
+        [
+          22,
+          110,
+          52
+        ],
+        [
+          31,
+          130,
+          177
+        ]
+      ]
+    }
+  },
+  "selection_order": [
+    "complete_accuracy",
+    "macro_f1",
+    "lower_mae"
+  ],
+  "rank": [
+    0.6510989010989011,
+    0.6158206248308972,
+    -0.5708167092199181
+  ],
+  "checkpoint": "best_model.safetensors",
+  "checkpoint_sha256": "96e45917dc959432f0279a72e3063d92a394bdbdaa3e5dc4e011a4e269c8de75",
+  "model_parameters": 109819976,
+  "model_config": {
+    "fusion_dim": 128,
+    "temporal_width": 64,
+    "audio_encoder": "baseline",
+    "vision_encoder": "baseline",
+    "pooling": "masked_mean",
+    "text_pooling": "masked_mean",
+    "fusion": "pooled",
+    "num_heads": 4,
+    "dropout": 0.1,
+    "av_direct": true,
+    "av_direct_scale": 0.1,
+    "neutral_aux": false,
+    "teacher_feature_dim": null,
+    "joint_prediction": false,
+    "backbone_dir": "models/teacher_student_v5_20260924/bert_base_uncased",
+    "load_pretrained": true,
+    "audio_layers": 2,
+    "vision_layers": 2
+  },
+  "resume_contract": {
+    "split_fingerprints": {
+      "train": {
+        "split": "train",
+        "count": 3395,
+        "sha256": "c11f547731688aa352ea1fd33a888768c78688bd772803ee0f0a9909a0795249"
+      },
+      "valid": {
+        "split": "valid",
+        "count": 728,
+        "sha256": "e2c01f7c7d167e498db557adaabf7ad8bfb9e42571c94b389980b05b6084e7de"
+      }
+    },
+    "scaler_sha256": "44a6aa4ec0d1cb7108b8bbfc9136aad4b38c46cbe6521c64f70bd7a9df5c2196",
+    "teacher": {
+      "enabled": false
+    }
+  },
+  "official_test_evaluated": false
+}
